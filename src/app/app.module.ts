@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { EventsComponent } from './events/events.component';
 import { SpecialEventsComponent } from './special-events/special-events.component';
 import { AuthService } from './auth.service';
+import { EventService } from './event.service';
 
 
 
@@ -28,7 +29,8 @@ import { AuthService } from './auth.service';
     AppRoutingModule
   ],
   providers: [
-    AuthService
+    AuthService,
+    EventService
   ],
   bootstrap: [AppComponent]
 })

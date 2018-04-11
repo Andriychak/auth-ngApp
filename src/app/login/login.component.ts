@@ -10,9 +10,9 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   loginUserData = {
-    email: "",
-    password: ""
-  }
+    email: '',
+    password: ''
+  };
 
   private showError: boolean;
 
@@ -27,9 +27,9 @@ export class LoginComponent implements OnInit {
       res => {
         console.log(res);
         this.showError = false;
-        this.router.navigate(["/special"]);
+        this.router.navigate(['/special']);
       },
-      err => { 
+      err => {
         console.log(err);
         this.showError = true;
       });
